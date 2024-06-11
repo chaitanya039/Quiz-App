@@ -1,0 +1,190 @@
+:root
+{
+    background-color: #fdebf5;
+    font-size: 62.5%; /* Means 10px because by default font size of html page is 16px at 100% font */
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+/* Styling for the heading */
+h1,
+h2,
+h3,
+h4
+{
+    margin-bottom: 1rem; /* Rem means it's changes the size relative to the root element means html element */
+}
+
+h1
+{
+    font-size: 5rem;
+    color: #FC427B;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+h1 > i
+{
+    color: #FC427B;
+}
+
+h1 > span
+{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2
+{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+h3
+{
+    font-size:2.8rem;
+    font-weight: 500;
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;  
+    padding: 3rem;
+}
+
+.container > *
+{
+    width: 100%;  /* For the horizantal allignment */
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-center
+{
+    justify-content: center;
+}
+
+.hidden
+{
+    display: none;
+}
+
+
+/* Buttons */
+
+.btn
+{
+    text-decoration: none;
+    font-size: 1.75rem;
+    padding: .5rem 0rem;
+    width: 15rem;
+    text-align: center;
+    border: 0.2rem solid #e3396c;
+    background-color: white;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    color: #e3396c;
+
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    box-shadow: .3rem .3rem 0.2rem 0.1rem rgba(253, 167, 223,0.3);
+    transform: translateY(-.1rem);
+    transition: transform 150ms;
+    color: white;
+    background-color: #FC427B;
+}
+
+.btn[disabled]:hover
+{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+
+/* Forms */
+
+form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input
+{
+    margin-bottom: 1.5rem;
+    width: 20rem;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    box-shadow: 0.1rem .1rem .1rem .1rem rgba(253, 167, 223,0.3);
+}
+
+input::placeholder
+{
+    font-size: 1.5rem;
+    color: #aaa;
+}
+
+#end > .btn, form > .btn
+{
+    width: 20rem;
+    border-radius: 0;
+}
+
+#footer
+{
+    position: absolute;
+    bottom: 7rem;
+    font-size: 1.25rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-weight: 500;
+}
+
+/* Loader */
+
+.loader {
+    border: 1rem solid #fff; /* Light grey */
+    border-top: 1rem solid #e3396c; /* Blue */
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    animation: spin .8s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

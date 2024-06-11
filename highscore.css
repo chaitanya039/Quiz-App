@@ -1,0 +1,30 @@
+
+table
+{
+    font-size: 1.75rem;
+    margin-bottom: 3.75rem;
+    border: .2rem solid #333;
+    border-radius: 0 0 1.5rem 0;
+    padding: 1rem;
+    width: 40%;
+}
+
+th, td
+{
+    text-align: start;
+    padding: .5rem 2rem;
+}
+
+th
+{
+    font-size: 1.9rem;
+}
+
+
+
+#highScores > .btn
+{
+    width: 40%;
+    min-width: 22rem;
+    border-radius: 0;
+}

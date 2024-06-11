@@ -1,0 +1,94 @@
+.choice-container
+{
+    display: flex;
+    background-color: white;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    transition: all ease-in .1s;
+}
+
+.choice-prefix
+{
+    color: white;
+    padding: 1.5rem 2.5rem;
+    background-color: #e3396c;
+    border-radius: 1rem 0rem 0rem 1rem;
+    font-weight: 500;
+}
+
+.choice-text
+{
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.choice-container:hover
+{
+    cursor: pointer;
+    box-shadow: .3rem .3rem 0.2rem 0.1rem rgba(253, 167, 223,0.2);
+    transform: translateY(-.1rem);
+    border-radius: 1rem;
+    transition: transform 150ms;
+}
+
+.correct > .choice-prefix
+{
+    background-color: green;
+}
+
+.correct
+{
+    background-color: white;
+    border: .1rem solid darkgreen;
+
+}
+
+.incorrect > .choice-prefix
+{
+    background-color: red;
+}
+
+.incorrect
+{
+    background-color: white;
+    border: .1rem solid darkred;
+}
+
+#head
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-prefix
+{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.head-main-txt
+{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+#progressBar
+{
+    margin-top: 1rem;
+    width: 20rem;
+    height: 3.5rem;
+}
+
+#progressBarFull
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    height: 100%;
+    background-color: #e3396c;
+    width: 0%;
+}
